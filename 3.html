@@ -1,73 +1,55 @@
-﻿
 <html>
-    <body>
-<head>
-  <style type="text/css">
-    table { border-collapse: collapse; width: 400px;}
-    td { border: 5px solid #000; }
-</style>
-</head>
-  
-<table>
- 
-  
- <tr>
-<td colspan="2" bgcolor="#ffffff"><br /></td>
-<td colspan="3" bgcolor="#ffffff"><br /></td>
-<td colspan="2" bgcolor="#fffa69"><br /></td>
-
-
-</tr>    
- <tr>
-<td rowspan="2" bgcolor="#ffffff"><br /></td>
-<td colspan="4" rowspan="4" bgcolor="#ff5b2d"><br /></td>
-<td colspan="2" rowspan="1" bgcolor="#fffa69"><br /></td>
-
-
-</tr>    
- <tr>
-<td colspan="2" rowspan="1" bgcolor="#fffa69"><br /></td>
-
-
-</tr>    
-
- <tr>
-<td rowspan="3" bgcolor="#ffffff"><br /></td>
-<td rowspan="2" bgcolor="#ffffff"><br /></td>
-<td rowspan="1" bgcolor="#ffffff"><br /></td>
-</tr>    
-  
-   <tr>
-<td colspan="1" rowspan="1" bgcolor="#ffffff"><br /></td>
-
-
-
-</tr>    
-  
-   <tr>
-<td bgcolor="#000000"><br /></td>
-<td bgcolor="#000000"><br /></td>
- 
-<td colspan="2" rowspan="1" bgcolor="#ffffff"><br /></td>
-<td colspan="2" rowspan="1" bgcolor="#ffffff"><br /></td>
-     
-</tr>    
-  
-<tr>
-<td rowspan="2" bgcolor="#fffa69"><br /></td>
-<td bgcolor="#000000"><br /></td>
-<td bgcolor="#000000"><br /></td>
-<td colspan="2" rowspan="1" ><br /></td>
-<td colspan="2" rowspan="2" bgcolor="#074481"><br /></td>
-
-</tr>    
-  
-   <tr>
-<td colspan="2" rowspan="1" bgcolor="#ffffff"><br /></td>
-<td colspan="2" rowspan="1" bgcolor="#000000"><br /></td>
-</tr>    
-
-  
-</table>
-    </body>
+<body>
+  <forme>
+ <b>Name </b><br />
+  <input type="text" name="fname"/>
+    <br />
+    <br />
+     <b>Email </b><br />
+    <input type="email"/>
+    <br />
+    <br />
+    <b>Sex</b><br />
+    <input type="radio" name="sex" value="male"/>Male
+    <input type="radio" name="sex" value="female"/>Female
+    <br />
+    <br />
+    <fieldset>
+    <legend><b>Current status</b> </legend><br />
+    <input type="checkbox" name "vehicle"/>Student<br />
+    <input type="checkbox" name "vehicle"/>Employd<br />
+    <input type="checkbox" name "vehicle"/>Unemployed<br />
+     </fieldset>
+       <br />
+    <b>Month and Year of birth</b><br />
+    <input type="month" name"bdaymonth"/>
+     <br />
+     <br />
+<b>Skills and Technologies</b><br />
+      <select multiple="multiple" size="8">
+      <optgroup label="Tech skills">
+        <option value="Html">Html</option>
+        <option value="CSS">CSS</option>
+        <option value="JavaScript">JavaScript</option>
+        </optgroup>
+      <optgroup label="Soft skills">
+        <option value="Time management">Time management</option>
+        <option value="Teamwork">Teamwork</option>
+        <option value="Leadership">Leadership</option>
+        </optgroup>  
+   </select>
+    <br />
+    <br />
+<b>Photo</b><br />
+    <input type="file" />
+    <br />
+    <br />
+<b>Commets</b><br />
+    <textarea name="mytext" cols="20" rows="10"></textarea>
+    <br />
+    <br />
+<input type="Submit" value="Save" />
+    
+  </forme>
+</body>
 </html>
